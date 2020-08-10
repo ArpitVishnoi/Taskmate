@@ -20,4 +20,4 @@ pytube3==9.6.4
 six==1.13.0
 typing-extensions==3.7.4.2
 wrapt==1.11.2
-gunicorn==19.7.1
+gunicorn==20.0.4
