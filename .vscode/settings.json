@@ -1,4 +1,6 @@
 {
     "python.pythonPath": "C:\\Users\\chira\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe"
 }
- 
+"scripts": {
+    "start": "node index.js"
+  },
