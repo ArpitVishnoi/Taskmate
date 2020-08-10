@@ -1,4 +1,4 @@
- 
+import django_heroku
 import os
 import environ
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -119,3 +119,5 @@ CRISPY_TEMPLATE_PACK='bootstrap4'
 LOGIN_REDIRECT_URL="todolist"
 
 LOGIN_URL="login"
+
+django_heroku.settings(locals())
