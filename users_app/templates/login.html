@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load  crispy_forms_tags %}
+{% block title %}
+  <title>Register</title>
+{% endblock title %}
+    arpit vishnoi genesis international school jaspur uttrakhand
+ 
+{% block content %}
+ <div class="container">
+   </br>
+   <h1> Login - TaskMate</h1>  
+    
+    {% if messages %}
+      {% for message in messages%}
+        <div class="alert alert-info  alert-dismissible fade show" role="alert">
+            {{message}}
+             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
+        </div>      
+      {% endfor %}
+    {% endif %}
+             
+    <form method="POST" class=" mt-5 col-6 ">
+       {% csrf_token %}
+        {{ form|crispy}}
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary col-lg-2">Login</button>
+       
+        
+
+       
+       </form>
+
+
+
+   </div>
+
+{% endblock content %}
