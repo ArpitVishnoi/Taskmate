@@ -5,7 +5,7 @@
 
 {% block content %}
    <div class="container">
-    {% if task_obj.manage==request.user%}
+    {% if task_obj.manage==request.user %}
 
       <form method="POST">
        {% csrf_token %}
@@ -14,9 +14,9 @@
        <input type="hidden" name ="done"  value="{{task_obj.done}}">
        <br>
        <button type="submit" class="btn btn-primary col-lg-2">Update Task</button>
-     </form>
-   {% else %}
-     <h3>Access Denied</h3>
+      </form>
+    {% else %}
+      <h3>Access Denied</h3>
     {% endif %}
    </div>
 
